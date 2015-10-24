@@ -1,0 +1,116 @@
+/*------------------------------------*\
+    This SCSS is based upon inuit.css (https://github.com/inuitcss/getting-started).
+    We're importing default blocks from inuit.
+    These files we can not change. However these are heavily based on SCSS variables, so we can change
+    these by supplying the specific SCSS-variable before we import each SCSS-file.
+    By default most of inuit is turned off, so we need to turn on each class via variables before importing.
+
+    We have structured the CSS in a specific way to avoid specificity-problems.
+    Basically we are first targetting elements without class-names etc,
+    then we are applying abstract patterns before we apply most of our own styles and
+    in the end helper-classes and layouts that should overwrite everything else..
+    All classes are also have namespaces. This means that you by looking at the prefix-of the class can
+    see where it is located and whether you can modify the file or not.
+    Read http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/ for more information
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #SETTINGS
+    Global variables, site-wide settings, config switches, etc.
+    These are just for SCSS – nothing here gets compiled to CSS directly
+\*------------------------------------*/
+//++ our own variables that we use throughout the project.
+@import "settings.defaults/settings.defaults.scss";
+@import "settings.responsive/settings.responsive.scss";
+//++  //our own remaps of inuits variables
+
+
+
+/*------------------------------------*\
+    #TOOLS
+    Site-wide mixins and functions.
+    These are just for SCSS - nothing here gets directly compiled to CSS.
+\*------------------------------------*/
+
+@import "tools.functions/tools.functions.scss";
+@import "tools.mixins/tools.mixins.scss";
+@import "tools.responsive/tools.responsive.scss";
+@import "tools.widths/tools.widths.scss";
+//++ Our additional functions (z-index helper etc.)
+//++ Our additional mixins (placeholder etc.)
+
+
+/*------------------------------------*\
+    #GENERIC
+    Low-specificity, far-reaching rulesets (e.g. resets).
+    Here we have our basic resets
+\*------------------------------------*/
+
+@import "generic.normalize/generic.normalize.scss";
+@import "generic.reset/generic.reset.scss";
+@import "generic.box-sizing/generic.box-sizing.scss";
+@import "generic.shared/generic.shared.scss";
+
+
+/*------------------------------------*\
+    #BASE
+    Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+    Here we style all our HTML-elements with the basic styling we want.
+\*------------------------------------*/
+
+@import "base.page/base.page.scss";
+@import "base.images/base.images.scss";
+@import "base.lists/base.lists.scss";
+@import "base.headings/base.headings.scss";
+
+
+
+/*------------------------------------*\
+    #OBJECTS (o-prefix)
+    Objects, abstractions, and design patterns (e.g. .media {}).
+    Here we import abstractions without styling etc.
+    Missing some abstractions? Read trough the SCSS-files imported to turn
+    on variables or get new ones from here:
+    https://github.com/inuitcss?query=objects.
+\*------------------------------------*/
+@import "objects.block/objects.block.scss";
+@import "objects.box/objects.box.scss";
+@import "objects.buttons/objects.buttons.scss";
+@import "objects.flag/objects.flag.scss";
+@import "objects.layout/objects.layout.scss";
+@import "objects.list-bare/objects.list-bare";
+@import "objects.list-block/objects.list-block";
+@import "objects.list-inline/objects.list-inline";
+@import "objects.list-ui/objects.list-ui";
+@import "objects.media/objects.media";
+@import "objects.pack/objects.pack.scss";
+@import "objects.tables/objects.tables.scss";
+@import "objects.tabs/objects.tabs.scss";
+
+
+/*------------------------------------*\
+    #COMPONENTS (c-prefix)
+    Discrete, complete chunks of UI (e.g. .carousel {}).
+    This is the one layer that inuitcss doesn’t get involved with.
+    This is where we add our own components and modifiers to the objects.
+\*------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------*\
+    #Utilities (u-prefix)
+    High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {})
+    Helpers and layout-classes
+\*------------------------------------*/
+@import "utilities.clearfix/utilities.clearfix.scss";
+@import "utilities.headings/utilities.headings.scss";
+@import "utilities.paragraphs/utilities.paragraphs.scss";
+@import "utilities.print/utilities.print.scss";
+@import "utilities.spacing/utilities.spacing.scss";
+@import "utilities.spacing-responsive/utilities.spacing-responsive.scss";
+@import "utilities.widths/utilities.widths.scss";
+@import "utilities.widths-responsive/utilities.widths-responsive.scss";
+//++ shame.scss
