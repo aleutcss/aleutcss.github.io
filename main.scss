@@ -1,9 +1,9 @@
 /*------------------------------------*\
-    This SCSS is based upon inuit.css (https://github.com/inuitcss/getting-started).
-    We're importing default blocks from inuit.
+    Aleut is a fork of [inuit.css](http://inuitcss.com/)
+    This is starter where we import all the packages from aleut into this style-sheet.
     These files we can not change. However these are heavily based on SCSS variables, so we can change
     these by supplying the specific SCSS-variable before we import each SCSS-file.
-    By default most of inuit is turned off, so we need to turn on each class via variables before importing.
+    By default most of aleut is turned off, so we need to turn on each class via variables before importing.
 
     We have structured the CSS in a specific way to avoid specificity-problems.
     Basically we are first targetting elements without class-names etc,
