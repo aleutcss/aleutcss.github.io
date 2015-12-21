@@ -67,7 +67,7 @@
 
 /*------------------------------------*\
     #OBJECTS (o-prefix)
-    Objects, abstractions, and design patterns (e.g. .media {}).
+    Objects, abstractions, and design patterns (e.g. .o-media {}).
     Here we import abstractions without styling etc.
     Missing some abstractions? Read trough the SCSS-files imported to turn
     on variables or get new ones from here:
@@ -90,7 +90,7 @@
 
 /*------------------------------------*\
     #COMPONENTS (c-prefix)
-    Discrete, complete chunks of UI (e.g. .carousel {}).
+    Discrete, complete chunks of UI (e.g. .c-carousel {}).
     This is the one layer that inuitcss doesn’t get involved with.
     This is where we add our own components and modifiers to the objects.
 \*------------------------------------*/
@@ -102,7 +102,7 @@
 
 /*------------------------------------*\
     #Utilities (u-prefix)
-    High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {})
+    High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})
     Helpers and layout-classes
 \*------------------------------------*/
 @import "utilities.clearfix/utilities.clearfix.scss";
