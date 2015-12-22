@@ -4,11 +4,11 @@
 @charset "utf-8";
 
 /*------------------------------------*\
-    This SCSS is based upon inuit.css (https://github.com/inuitcss/getting-started).
-    We're importing default blocks from inuit.
+    Aleut is a fork of [inuit.css](http://inuitcss.com/)
+    This is starter where we import all the packages from aleut into this style-sheet.
     These files we can not change. However these are heavily based on SCSS variables, so we can change
     these by supplying the specific SCSS-variable before we import each SCSS-file.
-    By default most of inuit is turned off, so we need to turn on each class via variables before importing.
+    By default most of aleut is turned off, so we need to turn on each class via variables before importing.
 
     We have structured the CSS in a specific way to avoid specificity-problems.
     Basically we are first targetting elements without class-names etc,
@@ -73,7 +73,7 @@
 
 /*------------------------------------*\
     #OBJECTS (o-prefix)
-    Objects, abstractions, and design patterns (e.g. .media {}).
+    Objects, abstractions, and design patterns (e.g. .o-media {}).
     Here we import abstractions without styling etc.
     Missing some abstractions? Read trough the SCSS-files imported to turn
     on variables or get new ones from here:
@@ -97,9 +97,9 @@
 
 /*------------------------------------*\
     #COMPONENTS (c-prefix)
-    Discrete, complete chunks of UI (e.g. .carousel {}).
-    This is the one layer that inuitcss doesn’t get involved with.
-    This is where we add our own components and modifiers to the objects.
+    Discrete, complete chunks of UI (e.g. `.c-carousel {}`). 
+    This is the one layer that aleutcss doesn’t get involved with. 
+    Here you place your own visual styling.
 \*------------------------------------*/
 @import "_components.toggle.scss";
 @import "_components.article.scss";
@@ -111,7 +111,7 @@
 
 /*------------------------------------*\
     #Utilities (u-prefix)
-    High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {})
+    High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})
     Helpers and layout-classes
 \*------------------------------------*/
 @import "../_includes/node_modules/utilities.clearfix/_utilities.clearfix.scss";
