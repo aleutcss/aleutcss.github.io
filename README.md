@@ -47,7 +47,7 @@
 
 If you some reason need to download all the repositories, just run this script in the shell:
 
-    curl -s https://api.github.com/orgs/aleutcss/repos?per_page=200 | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo["ssh_url"]} ]}'
+    curl -s "https://api.github.com/orgs/aleutcss/repos?per_page=200" | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo["ssh_url"]} ]}'
 
 ## Getting started
 
