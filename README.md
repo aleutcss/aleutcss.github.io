@@ -1,5 +1,19 @@
 # Aleut.css
 
+## To get up and running on the documentation
+* `gem install jekyll`
+* `jekyll serve`
+* All the documentation should be pulled from each seperate repository and be included in this Jekyll-site like this:
+```
+<h4 class="c-toggle u-bg-settings" data-toggle-next> settings.default</h4>
+<article class="c-article" data-hide>
+	{% capture settingsDefault %}
+		{% include /node_modules/settings.defaults/README.md %}
+		{% endcapture %}
+	{{ settingsDefault | markdownify }}
+</article>
+```
+
 *– A fork of inuit.css*
 
 > According to Georgy A. Menovshchikov (Г. А. Меновщиков), the name Aleut comes from the Aleut word allíthuh, meaning "community."
