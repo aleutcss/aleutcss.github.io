@@ -8,7 +8,7 @@ Aleut is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful fra
 
 ## "Let me just try this thing"
 
->	tl;dr. Download the starter. Uncomment some of the imports under _objects_ and set the varibles to `true`. Run `npm start` in the command line and open [localhost:5000](http://localhost:5000) in the browser. 
+>    tl;dr. Download the starter. Uncomment some of the imports under _objects_ and set the variables to `true`. Run `npm start` in the command line and open [localhost:5000](http://localhost:5000) in the browser. Tweak some stuff and see how things change.
 
 You _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
 
