@@ -47,6 +47,7 @@ $line-height:        30px;
 @import "../_includes/node_modules/tools.mixins/_tools.mixins.scss";
 @import "../_includes/node_modules/tools.responsive/_tools.responsive.scss";
 @import "../_includes/node_modules/tools.widths/_tools.widths.scss";
+@import "../_includes/node_modules/tools.clearfix/_tools.clearfix.scss";
 //++ Our additional functions (z-index helper etc.)
 //++ Our additional mixins (placeholder etc.)
 
@@ -96,6 +97,9 @@ $heading-size-3:  20px;
 @import "../_includes/node_modules/objects.list-bare/_objects.list-bare";
 @import "../_includes/node_modules/objects.list-block/_objects.list-block";
 @import "../_includes/node_modules/objects.list-inline/_objects.list-inline";
+
+$o-list-ui--tiny: true;
+$o-list-ui-border-color: rgba($primary, 0.2);
 @import "../_includes/node_modules/objects.list-ui/_objects.list-ui";
 @import "../_includes/node_modules/objects.media/_objects.media";
 @import "../_includes/node_modules/objects.pack/_objects.pack.scss";
@@ -108,7 +112,7 @@ $heading-size-3:  20px;
     #VENDOR
     Third party stuff
 \*------------------------------------*/
-@import "_prism.scss";
+@import "_vendor.prism.scss";
 
 
 /*------------------------------------*\
@@ -120,7 +124,11 @@ $heading-size-3:  20px;
 @import "_components.toggle.scss";
 @import "_components.article.scss";
 @import "_components.editable.scss";
+@import "_components.header.scss";
 @import "_components.hero.scss";
+@import "_components.footer.scss";
+@import "_components.documentation.scss";
+
 
 
 
@@ -136,8 +144,15 @@ $heading-size-3:  20px;
 @import "../_includes/node_modules/utilities.headings/_utilities.headings.scss";
 @import "../_includes/node_modules/utilities.paragraphs/_utilities.paragraphs.scss";
 @import "../_includes/node_modules/utilities.print/_utilities.print.scss";
+$u-p: true;
+$u-p--small: true;
+$u-m: true;
+$u-m--small: true;
+$u-m--none: true;
 @import "../_includes/node_modules/utilities.spacing/_utilities.spacing.scss";
 @import "../_includes/node_modules/utilities.spacing-responsive/_utilities.spacing-responsive.scss";
 @import "../_includes/node_modules/utilities.widths/_utilities.widths.scss";
 @import "../_includes/node_modules/utilities.widths-responsive/_utilities.widths-responsive.scss";
+@import "_utilities.backgrounds.scss";
+@import "_utilities.helpers.scss";
 //++ shame.scss

@@ -1,0 +1,62 @@
+
+.c-documentation {
+  display: flex;
+  flex-direction: row;
+}
+
+.c-documentation__nav {
+  padding: $spacing;
+  background: $gray-x-light;
+  width: calc(50vw - 410px);
+  min-width: 320px;
+}
+
+.c-documentation__nav-heading {
+  color: $gray;
+}
+
+.c-documentation__nav-link {
+  display: block;
+  position: relative;
+  font-family: $font-headings;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.3s ease;
+
+  &:hover, &:active, &:focus {
+    color: $primary;
+    transform: translateX($spacing/6);
+  }
+}
+
+  .c-documentation__nav-link--current {
+    &:before {
+      content: "";
+      position: absolute;
+      left: -($spacing/2);
+      top: 50%;
+      transform: translate(0, -50%);
+      transition: transform 0.3s ease;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 0 6px 8px;
+      border-color: transparent transparent transparent $primary;
+    }
+
+    &:hover, &:active, &:focus {
+      &:before {
+        transform: translate(-($spacing/6), -50%);
+      }
+    }
+  }
+
+.c-documentation__content {
+  padding: $spacing 0 0 $spacing;
+}
+
+.c-documentation__heading {
+  font-weight: 800;
+  color: $primary;
+  margin-bottom: $spacing;
+}

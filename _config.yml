@@ -15,7 +15,7 @@ kramdown:
   input: GFM
 
 # Site settings
-title: Aleut css
+title: Aleut.css
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Aleut is a fork of inuitcss. It is a powerful, Sass-based, BEM, OOCSS framework designed with scalability and performance in mind.

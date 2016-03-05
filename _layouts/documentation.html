@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+      <div class="c-hero c-hero--dark">
+        <div class="o-wrapper">
+          <span class="c-hero__title">Aleut.css</span>
+          <h1 class="c-hero__title c-hero__title--emphasized">{{ page.title }}</h1>
+        </div>
+      </div>
+
+      <div class="c-documentation">
+        <nav class="c-documentation__nav">
+          <h1 class="u-accessibility">Navigation</h1>
+          <h2 class="u-delta u-mb-small"><a class="c-documentation__nav-link c-documentation__nav-link--current" href="">Introduction</a></h2>
+          <h2 class="c-documentation__nav-heading u-zeta">Settings</h2>
+          <ol class="o-list-ui o-list-ui--tiny u-mb">
+
+            Her må vi hente alle i documentation?
+            {% for node in site.pages %}
+              {% if page.url == node.url %}
+                <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+              {% else %}
+                <li><a href="{{node.url}}">{{node.title}}</a></li>
+              {% endif %}
+            {% endfor %}
+
+
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+          </ol>
+
+          <h2 class="c-documentation__nav-heading u-zeta">Tools</h2>
+          <ol class="o-list-ui o-list-ui--tiny u-mb">
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+            <li class="o-list-ui__item">
+              <a class="c-documentation__nav-link" href="#">settings.defaults</a>
+            </li>
+          </ol>
+        </nav>
+        <article class="c-documentation__content">
+          <div class="o-wrapper">
+            <h1 class="c-documentation__heading">Introduction</h1>
+            <div class="c-editable">
+              {{ content }}
+            </div>
+          </div>
+        </article>
+      </div>
+
+
+
+    {% include footer.html %}
+	<script src="js/zepto.min.js"></script>
+	<script src="js/main.js"></script>
+  <script src="js/prism.js"></script>
+  </body>
+
+</html>
