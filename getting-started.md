@@ -41,11 +41,46 @@ You will now have a bunch of new stuff in your npm-folder (usually called `node_
 
 ### I've got all the packages and style.scss, now what?
 
-Open and browse through the style.scss file. You'll notice that it has some documentation and a bunch of `@import` tags. If you imported Aleut into an existing project you'll have to make sure that the i
+Open and browse through the style.scss file. You'll notice that it has some documentation and a bunch of `@import` tags. If you imported Aleut into an existing project you'll have to make sure that the import path is correct.
 
-There's a lot of thinking behind the structure of this file, but for now, the only thing you should now is that this file does nothing.
+	starter
+	├── node_modules
+		├── base.lists
+		├── base.page
+		├── …
+	├── components
+			├── compontent.icon.scss
+	├── style.scss <= $path:"/nodes_modules"
 
-What?
+In an existing project, you'll probably want to keep all the stylesheet files in their own `sass` folder. The path should be set relative to `styles.scss`.
+
+	project-folder
+	├── node_modules
+		├── base.lists
+		├── base.page
+		├── …
+	├── sass
+		├── components
+			├── compontent.icon.scss
+		├── style.scss <= $path:"../nodes_modules"
+
+Similarly, if you prefer to have all vendor packages in one folder, you'll have to set path accordingly.
+
+	project-folder
+	├── vendors
+		├── bower_components
+		├── node_modules
+			├── base.lists
+			├── base.page
+			├── …
+	├── sass
+		├── components
+			├── compontent.icon.scss
+		├── style.scss <= $path:"../vendors/nodes_modules"
+
+Now, go back to `styles.scss`. There's a lot of thinking behind the structure of this file, but for now, the only thing you should now is that this file does nothing.æ
+
+_What?_
 
 Everything in Aleut is off by default. To make use of the packages, you'll have to switch them on.
 
