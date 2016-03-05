@@ -5,7 +5,7 @@
 .c-hero__title {
   display: block;
   font-family: $font-headings;
-  font-weight: bold;
+  font-weight: 800;
   @include font-size(64px,1);
   color: $primary-light;
 }

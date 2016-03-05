@@ -27,7 +27,7 @@
 //++ our own variables that we use throughout the project.
 
 $font-size:          18px;
-$line-height:        28px;
+$line-height:        30px;
 
 @import "../_includes/node_modules/settings.defaults/settings.defaults.scss";
 @import "../_includes/node_modules/settings.responsive/settings.responsive.scss";
@@ -73,6 +73,9 @@ $line-height:        28px;
 @import "../_includes/node_modules/base.page/_base.page.scss";
 @import "../_includes/node_modules/base.images/_base.images.scss";
 @import "../_includes/node_modules/base.lists/_base.lists.scss";
+
+$heading-size-2:  26px;
+$heading-size-3:  20px;
 @import "../_includes/node_modules/base.headings/_base.headings.scss";
 @import "_base.page.scss";
 @import "_base.headings.scss";
@@ -116,6 +119,7 @@ $line-height:        28px;
 \*------------------------------------*/
 @import "_components.toggle.scss";
 @import "_components.article.scss";
+@import "_components.editable.scss";
 @import "_components.hero.scss";
 
 
