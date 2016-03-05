@@ -1,11 +1,11 @@
 ---
-layout: home
+layout: default
 ---
 
 ## What is Aleut CSS?
 Aleut is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful framework designed with scalability and performance in mind. Inuit was left alone a little too long, so we made a more opinionated version with a lot of the ideas proposed by Harry Roberts, easier variable-names and fewer choices. If you are used to inuitcss, aleutcss should be more or less plug and play. If you wonder what this is and how you can use it, please read on.
 
-## I got it, please get me started
+## Getting started
 
 You _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
 
@@ -13,9 +13,9 @@ Aleut is built with [SASS](http://sass-lang.com/guide). Chance is that you're al
 
 ### Aleut from scratch
 
-We have made a starter package that includes all the essentials. It should be enough to get you going.
+We have made a starter package that includes all the starter packages. It should be enough to get you going.
 
-If you're beging a new project from skratch it's easiest to just download [the zip-file](https://github.com/mhauken/start/archive/master.zip) directly. Or you can do it on the command line:
+If you're starting a new project from scratch it's easiest to just download [the zip-file](https://github.com/mhauken/start/archive/master.zip) directly. You can also do it all from the command line:
 
 	# Download or clone the starter package and save it as a project dependency
 	$ wget https://github.com/aleutcss/starter/archive/master.zip
@@ -26,21 +26,63 @@ If you're beging a new project from skratch it's easiest to just download [the z
 	# Download all the project dependencies with npm
 	$ npm i
 
+[Proceed to the next step](#ive-got-all-the-packages-and-settingsscss-now-what)
+
+
 ### Getting Aleut into an existing project
 
 If you already have a `package.json`-file in your project, just run this command in terminal to save the Aleut essentials as dependencies.
 
+<pre class="test">
 	$ npm install aleutcss/objects.tables aleutcss/objects.pack aleutcss/objects.media aleutcss/objects.list-ui aleutcss/objects.list-inline aleutcss/objects.buttons aleutcss/objects.box aleutcss/objects.block aleutcss/objects.tabs aleutcss/objects.list-bare aleutcss/objects.layout aleutcss/objects.flag aleutcss/utilities.spacing-responsive aleutcss/utilities.spacing aleutcss/utilities.clearfix aleutcss/utilities.paragraphs aleutcss/utilities.headings aleutcss/utilities.print aleutcss/utilities.widths aleutcss/utilities.widths-responsive aleutcss/tools.widths aleutcss/tools.responsive aleutcss/tools.mixins aleutcss/tools.function --save --no-progress
+</pre>
 
-You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `settings.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/settings.scss).
+You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `style.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/style.scss).
 
-### I've got all the packages and settings.scss, now what?
+### I've got all the packages and style.scss, now what?
 
+Open and browse through the style.scss file. You'll notice that it has some documentation and a bunch of `@import` tags. If you imported Aleut into an existing project you'll have to make sure that the import path is correct.
 
+	starter
+	├── node_modules
+		├── base.lists
+		├── base.page
+		├── …
+	├── components
+			├── compontent.icon.scss
+	├── style.scss <= $path:"/nodes_modules"
 
+In an existing project, you'll probably want to keep all the stylesheet files in their own `sass` folder. The path should be set relative to `styles.scss`.
 
+	project-folder
+	├── node_modules
+		├── base.lists
+		├── base.page
+		├── …
+	├── sass
+		├── components
+			├── compontent.icon.scss
+		├── style.scss <= $path:"../nodes_modules"
 
+Similarly, if you prefer to have all vendor packages in one folder, you'll have to set path accordingly.
 
+	project-folder
+	├── vendors
+		├── bower_components
+		├── node_modules
+			├── base.lists
+			├── base.page
+			├── …
+	├── sass
+		├── components
+			├── compontent.icon.scss
+		├── style.scss <= $path:"../vendors/nodes_modules"
+
+Now, go back to `styles.scss`. There's a lot of thinking behind the structure of this file, but for now, the only thing you should now is that this file does nothing.æ
+
+_What?_
+
+Everything in Aleut is off by default. To make use of the packages, you'll have to switch them on.
 
 
 ## Structure
