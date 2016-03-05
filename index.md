@@ -7,25 +7,42 @@ Aleut is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful fra
 
 ## I got it, please get me started
 
-Of course, you _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
+You _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
+
+Aleut is built with [SASS](http://sass-lang.com/guide). Chance is that you're already familiar with how SASS works. If not, Aleut is a great way to start learning. We'll cover how you import the packages into your stylesheet, and how to build the CSS-files for your web project.
+
+### Aleut from scratch
 
 We have made a starter package that includes all the essentials. It should be enough to get you going.
 
-If you already have a `package.json`-file in your project
+If you're beging a new project from skratch it's easiest to just download [the zip-file](https://github.com/mhauken/start/archive/master.zip) directly. Or you can do it on the command line:
 
-	# Download the starter package and save it as a project dependency
-	$ npm install aleutcss-basic --save
+	# Download or clone the starter package and save it as a project dependency
+	$ wget https://github.com/aleutcss/starter/archive/master.zip
+	# Unzip the zip file
+	$ unzip master.zip
+	# Navigate into the starter folder
+	$ cd starter
+	# Download all the project dependencies with npm
+	$ npm i
 
-If you're beging a new project from scratch
+### Getting Aleut into an existing project
 
-	# Initiate a new project
-	$ npm init
-	# Follow the instructions (you can leave all fields empty and complete them later)
-	$ …
-	# Download the starter package and save it as a project dependency
-	$ npm install aleutcss-starter --save
+If you already have a `package.json`-file in your project, just run this command in terminal to save the Aleut essentials as dependencies.
 
-You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project.
+	$ npm install aleutcss/objects.tables aleutcss/objects.pack aleutcss/objects.media aleutcss/objects.list-ui aleutcss/objects.list-inline aleutcss/objects.buttons aleutcss/objects.box aleutcss/objects.block aleutcss/objects.tabs aleutcss/objects.list-bare aleutcss/objects.layout aleutcss/objects.flag aleutcss/utilities.spacing-responsive aleutcss/utilities.spacing aleutcss/utilities.clearfix aleutcss/utilities.paragraphs aleutcss/utilities.headings aleutcss/utilities.print aleutcss/utilities.widths aleutcss/utilities.widths-responsive aleutcss/tools.widths aleutcss/tools.responsive aleutcss/tools.mixins aleutcss/tools.function --save --no-progress
+
+You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `settings.scss` for you to [download into your scss-folder][settingscsss].
+
+### I've got all the packages and settings.scss, now what?
+
+
+
+
+
+
+
+
 
 ## Structure
 Aleutcss is based upon 35 different packages loaded in specific layers to remain in control of specificity and structuring your project. The order of partials within each layer is fairly open; it is the sections themselves that are important to get in the correct order.
@@ -107,3 +124,5 @@ Because aleut does no cosmetic styling, it is up to you to author the Components
 
 ## Getting started
 If it's your first time with aleut we recommend starting with our kitchensink-project (where everything is still off by default), where we import all the packages automatically.
+
+[settingscsss]: settings.scss-downloadlink
