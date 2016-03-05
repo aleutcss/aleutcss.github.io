@@ -32,10 +32,9 @@ If you already have a `package.json`-file in your project, just run this command
 
 	$ npm install aleutcss/objects.tables aleutcss/objects.pack aleutcss/objects.media aleutcss/objects.list-ui aleutcss/objects.list-inline aleutcss/objects.buttons aleutcss/objects.box aleutcss/objects.block aleutcss/objects.tabs aleutcss/objects.list-bare aleutcss/objects.layout aleutcss/objects.flag aleutcss/utilities.spacing-responsive aleutcss/utilities.spacing aleutcss/utilities.clearfix aleutcss/utilities.paragraphs aleutcss/utilities.headings aleutcss/utilities.print aleutcss/utilities.widths aleutcss/utilities.widths-responsive aleutcss/tools.widths aleutcss/tools.responsive aleutcss/tools.mixins aleutcss/tools.function --save --no-progress
 
-You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `settings.scss` for you to [download into your scss-folder][settingscsss].
+You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `settings.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/settings.scss).
 
 ### I've got all the packages and settings.scss, now what?
-
 
 
 
@@ -124,5 +123,3 @@ Because aleut does no cosmetic styling, it is up to you to author the Components
 
 ## Getting started
 If it's your first time with aleut we recommend starting with our kitchensink-project (where everything is still off by default), where we import all the packages automatically.
-
-[settingscsss]: settings.scss-downloadlink
