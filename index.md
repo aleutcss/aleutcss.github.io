@@ -3,7 +3,29 @@ layout: default
 ---
 
 ## What is Aleut CSS?
-Aleut is a fork of inuitcss. It is a powerful, Sass-based, BEM, OOCSS framework designed with scalability and performance in mind. Inuit was left alone a little too long, so we made a more opinionated version with a lot of the ideas proposed by Harry Roberts, easier variable-names and fewer choices. If you are used to inuitcss, aleutcss should be more or less plug and play. If you wonder what this is and how you can use it, please read on.
+Aleut is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful framework designed with scalability and performance in mind. Inuit was left alone a little too long, so we made a more opinionated version with a lot of the ideas proposed by Harry Roberts, easier variable-names and fewer choices. If you are used to inuitcss, aleutcss should be more or less plug and play. If you wonder what this is and how you can use it, please read on.
+
+## I got it, please get me started
+
+Of course, you _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
+
+We have made a starter package that includes all the essentials. It should be enough to get you going.
+
+If you already have a `package.json`-file in your project
+
+	# Download the starter package and save it as a project dependency
+	$ npm install aleutcss-basic --save
+
+If you're beging a new project from scratch
+
+	# Initiate a new project
+	$ npm init
+	# Follow the instructions (you can leave all fields empty and complete them later)
+	$ …
+	# Download the starter package and save it as a project dependency
+	$ npm install aleutcss-starter --save
+
+You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project.
 
 ## Structure
 Aleutcss is based upon 35 different packages loaded in specific layers to remain in control of specificity and structuring your project. The order of partials within each layer is fairly open; it is the sections themselves that are important to get in the correct order.
