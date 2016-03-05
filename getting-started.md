@@ -3,25 +3,33 @@ layout: default
 ---
 
 <!--TOC-->
-# What is Aleut CSS?
-Aleut is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful framework designed with scalability and performance in mind. Inuit was left alone a little too long, so we made a more opinionated version with a lot of the ideas proposed by Harry Roberts, easier variable-names and fewer choices. If you are used to inuitcss, aleutcss should be more or less plug and play. If you wonder what this is and how you can use it, please read on.
 
-## "Let me just try this thing"
+# Getting started with Aleut.css
+Aleut.css is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful framework designed with scalability and performance in mind. Inuit was left alone a little too long, so we made a more opinionated version with a lot of the ideas proposed by Harry Roberts, easier variable-names and fewer choices. If you are used to inuitcss, aleutcss should be more or less plug and play. If you wonder what this is and how you can use it, please read on.
+
+## “Let me just try this thing”
 
 >    tl;dr. Download the starter. Uncomment some of the imports under _objects_ and set the variables to `true`. Run `npm start` in the command line and open [localhost:5000](http://localhost:5000) in the browser. Tweak some stuff and see how things change.
 
-You _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
+We get it, you just want to test this thing out before you invest time in reading about stylesheet structures and CSS-philosophies. Aleut is pretty well documented throughout the whole framework. You'll find documentation within the stylesheet files, in each of the repositories, and of course, at this website. While it may seem a bit daunting at first glance, trust us, the concepts behind Aleut.css is few and basic.
 
-Aleut is built with [SASS](http://sass-lang.com/guide). Chance is that you're already familiar with how SASS works. If not, Aleut is a great way to start learning. We'll cover how you import the packages into your stylesheet, and how to build the CSS-files for your web project.
+You _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut.css is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
 
-### Aleut from scratch
+Aleut.css is built with [SASS](http://sass-lang.com/guide). Chance is that you're already familiar with how SASS works. If not, Aleut.css is a great way to start learning. We'll cover how you import the packages into your stylesheet, and how to build the CSS-files for your web project.
 
+## Core ideas
+
+1. Mostly off by default. Turn on what you need
+2. Override defaults by declaring the variable before the package import
+3. Build your project based on the objects in Aleut
+4. Personalize by making components that either adds to, or builds on the objects
+5. If you're on your self, go wild with scss, if your code are to be read by others, keep it boring and readable.
+
+### Aleut.css from scratch
 
 We have made a starter package that includes all the starter packages. It should be enough to get you going.
 
 If you're starting a new project from scratch it's easiest to just download [the zip-file](https://github.com/mhauken/start/archive/master.zip) directly. You can also do it all from the command line:
-
-
 
 ~~~ssh
 # Download or clone the starter package and save it as a project dependency
@@ -32,29 +40,21 @@ $ unzip master.zip
 $ cd starter
 # Download all the project dependencies with npm
 $ npm i
+$ npm start
 ~~~
 
+### Getting Aleut.css into an existing project
 
-
-
-[Proceed to the next step](#ive-got-all-the-packages-and-settingsscss-now-what)
-
-
-### Getting Aleut into an existing project
-
-If you already have a `package.json`-file in your project, just run this command in terminal to save the Aleut essentials as dependencies.
-
+If you already have a `package.json`-file in your project, just run this command in terminal to save the Aleut.css essentials as dependencies.
 
 ~~~ssh
 $ npm install aleutcss/objects.tables aleutcss/objects.pack aleutcss/objects.media aleutcss/objects.list-ui aleutcss/objects.list-inline aleutcss/objects.buttons aleutcss/objects.box aleutcss/objects.block aleutcss/objects.tabs aleutcss/objects.list-bare aleutcss/objects.layout aleutcss/objects.flag aleutcss/utilities.spacing-responsive aleutcss/utilities.spacing aleutcss/utilities.clearfix aleutcss/utilities.paragraphs aleutcss/utilities.headings aleutcss/utilities.print aleutcss/utilities.widths aleutcss/utilities.widths-responsive aleutcss/tools.widths aleutcss/tools.responsive aleutcss/tools.mixins aleutcss/tools.function --save --no-progress
 ~~~
 
 
-You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `style.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/style.scss).
+You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut.css ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `style.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/style.scss).
 
-### I've got all the packages and style.scss, now what?
-
-Open and browse through the style.scss file. You'll notice that it has some documentation and a bunch of `@import` tags. If you imported Aleut into an existing project you'll have to make sure that the import path is correct.
+Open and browse through the style.scss file. You'll notice that it has some documentation and a bunch of `@import` tags. If you imported Aleut.css into an existing project you'll have to make sure that the import path is correct.
 
 ~~~ssh
 starter
@@ -99,10 +99,9 @@ project-folder
 ~~~
 
 
-
 Now, go back to `styles.scss`. There's a lot of thinking behind the structure of this file, but for now, the only thing you should now is if you compile this file, you'll get some generic settings and resets. To make use of the objects, you'll have un-comment them. The idea behind this framework is to compile what you use.
 
-Lets say you want to make a small button component. Aleut comes with `objects.buttons` with some predefined rules for how a button element. By importing this file, you can make use of the `o-btn` class, which makes button-objects behave a bit better. It has also some predefined options, which may come in handy. These are turned off by default. To enable them, you'll have to set the variable to `true` _before_ the line, which imports the object.
+Lets say you want to make a small button component. Aleut.css comes with `objects.buttons` with some predefined rules for how a button element. By importing this file, you can make use of the `o-btn` class, which makes button-objects behave a bit better. It has also some predefined options, which may come in handy. These are turned off by default. To enable them, you'll have to set the variable to `true` _before_ the line, which imports the object.
 
 ~~~scss
 $o-btn--small: true; // <= overrides $o-btn-small: false !default;
@@ -118,7 +117,8 @@ $o-btn--full:         true;
 @import "node-modules/aleut-buttons/objects.buttons";
 ~~~
 
-# Getting deep with Aleut.css
+# Understanding Aleut.css
+
 
 ## Structure
 Aleut.css is based upon 35 different packages loaded in specific layers to remain in control of specificity and structuring your project. The order of partials within each layer is fairly open; it is the sections themselves that are important to get in the correct order.
@@ -127,10 +127,12 @@ Aleut.css is based upon 35 different packages loaded in specific layers to remai
 <img src="public/overview.png">
 
 ### Settings
+
+In [settings.defaults](https://github.com/aleutcss/settings.defaults)
+
 Global variables, site-wide settings, config switches, etc.
 (just code for SCSS)
 
-~~~html
 <h4 class="c-toggle u-bg-settings" data-toggle-next> settings.default</h4>
 <article class="c-article" data-hide>
   {% capture settingsDefault %}
@@ -138,9 +140,8 @@ Global variables, site-wide settings, config switches, etc.
     {% endcapture %}
   {{ settingsDefault | markdownify }}
 </article>
-~~~
 
-~~~html
+
 <h4 class="c-toggle u-bg-settings" data-toggle-next> settings.responsive</h4>
 <article class="c-article" data-hide>
   {% capture settingsResponsive %}
@@ -148,7 +149,7 @@ Global variables, site-wide settings, config switches, etc.
     {% endcapture %}
   {{ settingsResponsive | markdownify }}
 </article>
-~~~
+
 
 ### Tools
 Site-wide mixins and functions.
@@ -198,9 +199,6 @@ Another good thing about the structure of aleut and it's packages is that you ca
 To extend aleut, simply create a partial in the `<section>.<file>` format as the rest of the files, and `@import ` it wherever it is needed.
 
 ### Components
-Aleut does its best to stay away from any cosmetic styling. You can therefore use it on any project without the same look-and-feel. If you do require a UI out of the box, then inuitcss is probably not the best tool for you.
+Aleut.css does its best to stay away from any cosmetic styling. You can therefore use it on any project without the same look-and-feel. If you do require a UI out of the box, then inuitcss is probably not the best tool for you.
 
 Because aleut does no cosmetic styling, it is up to you to author the Components layer. A good example of this could be a main navigation of a site. First you mark it up as an `<ul>`, then you add the object `.o-list-inline` to make the menu horizontal, to style it to your liking you create a new file called `_components.site-nav.scss` and add the class `.c-site-nav` to the `.o-list-inline` and style it to your liking.
-
-## Getting started
-If it's your first time with aleut we recommend starting with our kitchensink-project (where everything is still off by default), where we import all the packages automatically.
