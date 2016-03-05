@@ -17,14 +17,14 @@ We have made a starter package that includes all the starter packages. It should
 
 If you're starting a new project from scratch it's easiest to just download [the zip-file](https://github.com/mhauken/start/archive/master.zip) directly. You can also do it all from the command line:
 
-	# Download or clone the starter package and save it as a project dependency
-	$ wget https://github.com/aleutcss/starter/archive/master.zip
-	# Unzip the zip file
-	$ unzip master.zip
-	# Navigate into the starter folder
-	$ cd starter
-	# Download all the project dependencies with npm
-	$ npm i
+  # Download or clone the starter package and save it as a project dependency
+  $ wget https://github.com/aleutcss/starter/archive/master.zip
+  # Unzip the zip file
+  $ unzip master.zip
+  # Navigate into the starter folder
+  $ cd starter
+  # Download all the project dependencies with npm
+  $ npm i
 
 [Proceed to the next step](#ive-got-all-the-packages-and-settingsscss-now-what)
 
@@ -33,9 +33,9 @@ If you're starting a new project from scratch it's easiest to just download [the
 
 If you already have a `package.json`-file in your project, just run this command in terminal to save the Aleut essentials as dependencies.
 
-<pre class="test">
-	$ npm install aleutcss/objects.tables aleutcss/objects.pack aleutcss/objects.media aleutcss/objects.list-ui aleutcss/objects.list-inline aleutcss/objects.buttons aleutcss/objects.box aleutcss/objects.block aleutcss/objects.tabs aleutcss/objects.list-bare aleutcss/objects.layout aleutcss/objects.flag aleutcss/utilities.spacing-responsive aleutcss/utilities.spacing aleutcss/utilities.clearfix aleutcss/utilities.paragraphs aleutcss/utilities.headings aleutcss/utilities.print aleutcss/utilities.widths aleutcss/utilities.widths-responsive aleutcss/tools.widths aleutcss/tools.responsive aleutcss/tools.mixins aleutcss/tools.function --save --no-progress
-</pre>
+```ssh
+  $ npm install aleutcss/objects.tables aleutcss/objects.pack aleutcss/objects.media aleutcss/objects.list-ui aleutcss/objects.list-inline aleutcss/objects.buttons aleutcss/objects.box aleutcss/objects.block aleutcss/objects.tabs aleutcss/objects.list-bare aleutcss/objects.layout aleutcss/objects.flag aleutcss/utilities.spacing-responsive aleutcss/utilities.spacing aleutcss/utilities.clearfix aleutcss/utilities.paragraphs aleutcss/utilities.headings aleutcss/utilities.print aleutcss/utilities.widths aleutcss/utilities.widths-responsive aleutcss/tools.widths aleutcss/tools.responsive aleutcss/tools.mixins aleutcss/tools.function --save --no-progress
+```
 
 You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `style.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/style.scss).
 
@@ -43,50 +43,62 @@ You will now have a bunch of new stuff in your npm-folder (usually called `node_
 
 Open and browse through the style.scss file. You'll notice that it has some documentation and a bunch of `@import` tags. If you imported Aleut into an existing project you'll have to make sure that the import path is correct.
 
-	starter
-	├── node_modules
-		├── base.lists
-		├── base.page
-		├── …
-	├── components
-			├── compontent.icon.scss
-	├── style.scss <= $path:"/nodes_modules"
+```ssh
+    starter
+    ├── node_modules
+      ├── base.lists
+      ├── base.page
+      ├── …
+    ├── components
+        ├── compontent.icon.scss
+    ├── style.scss <= $path:"/nodes_modules"
+```
 
 In an existing project, you'll probably want to keep all the stylesheet files in their own `sass` folder. The path should be set relative to `styles.scss`.
 
-	project-folder
-	├── node_modules
-		├── base.lists
-		├── base.page
-		├── …
-	├── sass
-		├── components
-			├── compontent.icon.scss
-		├── style.scss <= $path:"../nodes_modules"
+```ssh
+    project-folder
+    ├── node_modules
+      ├── base.lists
+      ├── base.page
+      ├── …
+    ├── sass
+      ├── components
+        ├── compontent.icon.scss
+      ├── style.scss <= $path:"../nodes_modules"
+```
 
 Similarly, if you prefer to have all vendor packages in one folder, you'll have to set path accordingly.
 
-	project-folder
-	├── vendors
-		├── bower_components
-		├── node_modules
-			├── base.lists
-			├── base.page
-			├── …
-	├── sass
-		├── components
-			├── compontent.icon.scss
-		├── style.scss <= $path:"../vendors/nodes_modules"
+```ssh
+    project-folder
+    ├── vendors
+      ├── bower_components
+      ├── node_modules
+        ├── base.lists
+        ├── base.page
+        ├── …
+    ├── sass
+      ├── components
+        ├── compontent.icon.scss
+      ├── style.scss <= $path:"../vendors/nodes_modules"
+```
 
-Now, go back to `styles.scss`. There's a lot of thinking behind the structure of this file, but for now, the only thing you should now is that this file does nothing.æ
+Now, go back to `styles.scss`. There's a lot of thinking behind the structure of this file, but for now, the only thing you should now is if you compile this file, you'll get some generic settings and resets. To make use of the objects, you'll have un-comment them. The idea behind this framework is to compile what you use.
 
-_What?_
+Lets say you want to make a small button component. Aleut comes with `objects.buttons` with some predefined rules for how a button element. By importing this file, you can make use of the `o-btn` class, which makes button-objects behave a bit better. It has also some predefined options, which may come in handy. These are turned off by default. To enable them, you'll have to set the variable to `true` _before_ the line, which imports the object.
 
-Everything in Aleut is off by default. To make use of the packages, you'll have to switch them on.
+```scss
+    $o-btn--small: true; // <= overrides $o-btn-small: false !default;
+    @import "../node_modules/aleut-buttons/objects.buttons.scss";
+```
+
+
+
 
 
 ## Structure
-Aleutcss is based upon 35 different packages loaded in specific layers to remain in control of specificity and structuring your project. The order of partials within each layer is fairly open; it is the sections themselves that are important to get in the correct order.
+Aleut.css is based upon 35 different packages loaded in specific layers to remain in control of specificity and structuring your project. The order of partials within each layer is fairly open; it is the sections themselves that are important to get in the correct order.
 
 [Image of all the packages with links to each of them in this document]
 <img src="public/overview.png">
@@ -97,18 +109,18 @@ Global variables, site-wide settings, config switches, etc.
 
 <h4 class="c-toggle u-bg-settings" data-toggle-next> settings.default</h4>
 <article class="c-article" data-hide>
-	{% capture settingsDefault %}
-		{% include /node_modules/settings.defaults/README.md %}
-		{% endcapture %}
-	{{ settingsDefault | markdownify }}
+  {% capture settingsDefault %}
+    {% include /node_modules/settings.defaults/README.md %}
+    {% endcapture %}
+  {{ settingsDefault | markdownify }}
 </article>
 
 <h4 class="c-toggle u-bg-settings" data-toggle-next> settings.responsive</h4>
 <article class="c-article" data-hide>
-	{% capture settingsResponsive %}
-		{% include /node_modules/settings.responsive/README.md %}
-		{% endcapture %}
-	{{ settingsResponsive | markdownify }}
+  {% capture settingsResponsive %}
+    {% include /node_modules/settings.responsive/README.md %}
+    {% endcapture %}
+  {{ settingsResponsive | markdownify }}
 </article>
 
 ### Tools
