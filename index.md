@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 ## What is Aleut CSS?

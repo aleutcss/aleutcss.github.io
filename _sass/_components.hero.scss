@@ -1,0 +1,15 @@
+.c-hero {
+  padding: ($spacing*2) 0;
+}
+
+.c-hero__title {
+  display: block;
+  font-family: $font-headings;
+  font-weight: bold;
+  @include font-size(64px,1);
+  color: $primary-light;
+}
+
+  .c-hero__title--emphasized {
+    color: $primary;
+  }

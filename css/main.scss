@@ -25,9 +25,14 @@
     These are just for SCSS – nothing here gets compiled to CSS directly
 \*------------------------------------*/
 //++ our own variables that we use throughout the project.
+
+$font-size:          18px;
+$line-height:        28px;
+
 @import "../_includes/node_modules/settings.defaults/settings.defaults.scss";
 @import "../_includes/node_modules/settings.responsive/settings.responsive.scss";
-@import "_settings.vars.scss";
+@import "_settings.scss";
+@import "_settings.fonts.scss";
 //++  //our own remaps of inuits variables
 
 
@@ -55,7 +60,8 @@
 @import "../_includes/node_modules/generic.normalize/_generic.normalize.scss";
 @import "../_includes/node_modules/generic.reset/_generic.reset.scss";
 @import "../_includes/node_modules/generic.box-sizing/_generic.box-sizing.scss";
-@import "../_includes/node_modules/generic.shared/_generic.shared.scss";
+//@import "../_includes/node_modules/generic.shared/_generic.shared.scss";
+@import "_generic.shared.scss";
 
 
 /*------------------------------------*\
@@ -68,8 +74,8 @@
 @import "../_includes/node_modules/base.images/_base.images.scss";
 @import "../_includes/node_modules/base.lists/_base.lists.scss";
 @import "../_includes/node_modules/base.headings/_base.headings.scss";
-
-
+@import "_base.page.scss";
+@import "_base.headings.scss";
 
 /*------------------------------------*\
     #OBJECTS (o-prefix)
@@ -96,13 +102,21 @@
 @import "_objects.highlight.scss";
 
 /*------------------------------------*\
+    #VENDOR
+    Third party stuff
+\*------------------------------------*/
+@import "_prism.scss";
+
+
+/*------------------------------------*\
     #COMPONENTS (c-prefix)
-    Discrete, complete chunks of UI (e.g. `.c-carousel {}`). 
-    This is the one layer that aleutcss doesn’t get involved with. 
+    Discrete, complete chunks of UI (e.g. `.c-carousel {}`).
+    This is the one layer that aleutcss doesn’t get involved with.
     Here you place your own visual styling.
 \*------------------------------------*/
 @import "_components.toggle.scss";
 @import "_components.article.scss";
+@import "_components.hero.scss";
 
 
 
@@ -122,5 +136,4 @@
 @import "../_includes/node_modules/utilities.spacing-responsive/_utilities.spacing-responsive.scss";
 @import "../_includes/node_modules/utilities.widths/_utilities.widths.scss";
 @import "../_includes/node_modules/utilities.widths-responsive/_utilities.widths-responsive.scss";
-@import "_trumps.helpers.scss";
 //++ shame.scss

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "fira_coderegular";
+  src: url('/fonts/firacode-regular.woff2') format('woff2'),
+       url('/fonts/firacode-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// Type
+$font: "Chronicle SSm A", "Chronicle SSm B", Georgia, serif;
+$font-headings: sans-serif;
+$font-code: "fira_coderegular", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
