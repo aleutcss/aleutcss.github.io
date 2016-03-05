@@ -6,8 +6,26 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Graphik";
+  src: url('/fonts/Graphik-Black-Web.eot');
+  src: url("/fonts/Graphik-Black-Web.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url('/fonts/Graphik-Medium-Web.eot');
+  src: url("/fonts/Graphik-Medium-Web.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
 
 // Type
 $font: "Chronicle SSm A", "Chronicle SSm B", Georgia, serif;
-$font-headings: sans-serif;
+$font-headings: "Graphik", sans-serif;
 $font-code: "fira_coderegular", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;

@@ -1,0 +1,14 @@
+.c-editable {
+
+  > h2, > h3, > h4 {
+    margin-bottom: ($spacing/2);
+  }
+
+  > p code {
+    padding: 0 ($spacing/4);
+    color: $primary;
+    background: $gray-x-light;
+    box-shadow: inset 0 0 1px $primary;
+    border-radius: 3px;
+  }
+}
