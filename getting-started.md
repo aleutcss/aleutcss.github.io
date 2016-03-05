@@ -7,6 +7,20 @@ layout: default
 # Getting started with Aleut.css
 Aleut.css is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful framework designed with scalability and performance in mind. Inuit was left alone a little too long, so we made a more opinionated version with a lot of the ideas proposed by Harry Roberts, easier variable-names and fewer choices. If you are used to inuitcss, aleutcss should be more or less plug and play. If you wonder what this is and how you can use it, please read on.
 
+{% for thing in site.node_modules %}
+
+{% endfor %}
+
+
+## Core ideas
+
+1. Mostly off by default. Turn on what you need
+2. Override defaults by declaring the variable before the package import
+3. Build your project based on the objects in Aleut
+4. Personalize by making components that either adds to, or builds on the objects
+5. If you're on your self, go wild with scss, if your code are to be read by others, keep it boring and readable.
+
+
 ## “Let me just try this thing”
 
 >    tl;dr. Download the starter. Uncomment some of the imports under _objects_ and set the variables to `true`. Run `npm start` in the command line and open [localhost:5000](http://localhost:5000) in the browser. Tweak some stuff and see how things change.
@@ -16,14 +30,6 @@ We get it, you just want to test this thing out before you invest time in readin
 You _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut.css is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
 
 Aleut.css is built with [SASS](http://sass-lang.com/guide). Chance is that you're already familiar with how SASS works. If not, Aleut.css is a great way to start learning. We'll cover how you import the packages into your stylesheet, and how to build the CSS-files for your web project.
-
-## Core ideas
-
-1. Mostly off by default. Turn on what you need
-2. Override defaults by declaring the variable before the package import
-3. Build your project based on the objects in Aleut
-4. Personalize by making components that either adds to, or builds on the objects
-5. If you're on your self, go wild with scss, if your code are to be read by others, keep it boring and readable.
 
 ### Aleut.css from scratch
 
@@ -202,3 +208,15 @@ To extend aleut, simply create a partial in the `<section>.<file>` format as the
 Aleut.css does its best to stay away from any cosmetic styling. You can therefore use it on any project without the same look-and-feel. If you do require a UI out of the box, then inuitcss is probably not the best tool for you.
 
 Because aleut does no cosmetic styling, it is up to you to author the Components layer. A good example of this could be a main navigation of a site. First you mark it up as an `<ul>`, then you add the object `.o-list-inline` to make the menu horizontal, to style it to your liking you create a new file called `_components.site-nav.scss` and add the class `.c-site-nav` to the `.o-list-inline` and style it to your liking.
+
+## Aleut.css for skeptics
+
+“”
+
+## Aleut.css for beginners
+
+“”
+
+## Aleut.css for teams
+
+## Aleut.css for dreamers
