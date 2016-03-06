@@ -10,6 +10,7 @@ pre[class*="language-"] {
 	color: $white;
 	background: none;
 	font-family: $font-code;
+	@include font-size(14px, 1.4);
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -48,8 +49,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
+	padding: $spacing;
 	overflow: auto;
 }
 

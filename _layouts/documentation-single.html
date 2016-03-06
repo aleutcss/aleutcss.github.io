@@ -23,17 +23,18 @@
         </nav>
         <article class="c-documentation__content">
           <div class="o-wrapper">
-            <h1 class="c-documentation__heading">Introduction</h1>
-            <div class="c-editable">
+
+            <article class="c-editable">
+              <h1 class="c-documentation__heading">{{page.title}}</h1>
               {{ content }}
 
-              <article class="c-article">
+
               	{% capture readme %}
               		{% include /node_modules/{{page.package}}/README.md %}
               	{% endcapture %}
               	{{ readme | markdownify }}
-              </article>
-            </div>
+
+            </article>
           </div>
         </article>
       </div>
