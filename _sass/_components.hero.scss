@@ -2,6 +2,14 @@
   padding: ($spacing*2) 0;
 }
 
+  .c-hero--dark {
+    background: $primary;
+
+    .c-hero__title--emphasized {
+      color: $white;
+    }
+  }
+
 .c-hero__title {
   display: block;
   font-family: $font-headings;

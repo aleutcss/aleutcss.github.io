@@ -1,0 +1,43 @@
+.c-header {
+  font-family: $font-headings;
+}
+
+.c-header__logo {
+  color: $primary;
+  font-weight: 800;
+  text-decoration: none;
+  @include font-size(22px, 1);
+  transition: color 0.2s ease;
+  margin-right: $spacing*2;
+
+  &:hover, &:active, &:focus {
+    color: $primary-light;
+  }
+}
+
+.c-header__nav {
+  display: inline-block;
+}
+
+.c-header__list {
+  display: inline-block;
+}
+
+.c-header__list-item {
+  display: inline-block;
+  margin-right: $spacing;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.c-header__link {
+  color: $text-color;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover, &:active, &:focus {
+    color: $primary;
+  }
+}
