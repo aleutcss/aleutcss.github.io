@@ -10,7 +10,6 @@ pre[class*="language-"] {
 	color: $white;
 	background: none;
 	font-family: $font-code;
-	@include font-size(14px, 1.4);
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
