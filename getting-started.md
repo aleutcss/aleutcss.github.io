@@ -2,14 +2,8 @@
 layout: default
 ---
 
-<!--TOC-->
-
 # Getting started with Aleut.css
 Aleut.css is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful framework designed with scalability and performance in mind. Inuit was left alone a little too long, so we made a more opinionated version with a lot of the ideas proposed by Harry Roberts, easier variable-names and fewer choices. If you are used to inuitcss, aleutcss should be more or less plug and play. If you wonder what this is and how you can use it, please read on.
-
-{% for thing in site.node_modules %}
-
-{% endfor %}
 
 
 ## Core ideas
@@ -142,7 +136,7 @@ Global variables, site-wide settings, config switches, etc.
 <h4 class="c-toggle u-bg-settings" data-toggle-next> settings.default</h4>
 <article class="c-article" data-hide>
   {% capture settingsDefault %}
-    {% include /node_modules/settings.defaults/README.md %}
+    {% include node_modules/settings.defaults/README.md %}
     {% endcapture %}
   {{ settingsDefault | markdownify }}
 </article>
@@ -151,7 +145,7 @@ Global variables, site-wide settings, config switches, etc.
 <h4 class="c-toggle u-bg-settings" data-toggle-next> settings.responsive</h4>
 <article class="c-article" data-hide>
   {% capture settingsResponsive %}
-    {% include /node_modules/settings.responsive/README.md %}
+    {% include node_modules/settings.responsive/README.md %}
     {% endcapture %}
   {{ settingsResponsive | markdownify }}
 </article>
@@ -219,4 +213,8 @@ Because aleut does no cosmetic styling, it is up to you to author the Components
 
 ## Aleut.css for teams
 
+“”
+
 ## Aleut.css for dreamers
+
+“”
