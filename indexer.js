@@ -10,6 +10,9 @@ const filesList = Glob.sync(pattern)
 filesList.map((val) => {
   let filename = path.basename(val, '.scss')
   filename = filename.replace('_', '')
+  let docdirname = path.basename(val, '.scss')
+  docdirname = filename.replace('_', '')
+  docdirname = filename.replace('.', '-')
   const section = filename.split('.')[0]
   const dirname = path.dirname(val)
   const text = `---
@@ -18,15 +21,15 @@ title: ${filename}
 section: ${section}
 package: ${filename}
 ---`
-  const newDir = `./documentation/${filename}`
+  const newDir = `./documentation/${docdirname}`
   if (!fs.existsSync(newDir)){
     fs.mkdirSync(newDir)
   }
-  fs.writeFile(`documentation/${filename}/index.md`, text, err => {
+  fs.writeFile(`documentation/${docdirname}/index.md`, text, err => {
     if (err) {
       console.log(`Something went wront: ${err}`)
     } else {
-      console.log(`Created index.md in ${dirname}`)
+      console.log(`Created index.md in ${docdirname}`)
     }
   })
 })
