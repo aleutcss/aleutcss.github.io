@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+  {% include header.html %}
 
-      <div class="c-hero c-hero--dark">
-        <div class="o-wrapper">
-          <span class="c-hero__title">Aleut.css</span>
-          <h1 class="c-hero__title c-hero__title--emphasized">Documentation</h1>
+  <div class="c-hero c-hero--dark">
+    <div class="o-wrapper">
+      <span class="c-hero__title">Aleut.css</span>
+      <h1 class="c-hero__title c-hero__title--emphasized">Documentation</h1>
+    </div>
+  </div>
+
+  <div class="c-documentation">
+    <nav class="c-documentation__nav">
+      <h1 class="u-accessibility">Navigation</h1>
+      <h2 class="u-delta u-mb-small"><a class="c-documentation__nav-link c-documentation__nav-link--current" href="/documentation/">Introduction</a></h2>
+
+      {% include documentation-nav.html %}
+
+
+    </nav>
+    <article class="c-documentation__content">
+      <div class="o-wrapper">
+        <h1 class="c-documentation__heading">Introduction</h1>
+        <div class="c-editable">
+          {{ content }}
         </div>
       </div>
-
-      <div class="c-documentation">
-        <nav class="c-documentation__nav">
-          <h1 class="u-accessibility">Navigation</h1>
-          <h2 class="u-delta u-mb-small"><a class="c-documentation__nav-link c-documentation__nav-link--current" href="/documentation/">Introduction</a></h2>
-
-          {% include documentation-nav.html %}
-
-        </nav>
-        <article class="c-documentation__content">
-          <div class="o-wrapper">
-            <h1 class="c-documentation__heading">Introduction</h1>
-            <div class="c-editable">
-              {{ content }}
-            </div>
-          </div>
-        </article>
-      </div>
+    </article>
+  </div>
 
 
 
-    {% include footer.html %}
-    <script src="/js/zepto.min.js"></script>
-  	<script src="/js/main.js"></script>
-    <script src="/js/prism.js"></script>
-  </body>
+  {% include footer.html %}
+  <script src="/js/zepto.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/prism.js"></script>
+</body>
 
 </html>
