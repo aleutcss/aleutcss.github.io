@@ -10,11 +10,12 @@ const filesList = Glob.sync(pattern)
 filesList.map((val) => {
   let filename = path.basename(val, '.scss')
   filename = filename.replace('_', '')
+  const section = filename.split('.')[0]
   const dirname = path.dirname(val)
   const text = `---
 layout: documentation-single
 title: ${filename}
-section: tools
+section: ${section}
 package: ${filename}
 ---`
   const newDir = `./documentation/${filename}`
@@ -27,5 +28,5 @@ package: ${filename}
     } else {
       console.log(`Created index.md in ${dirname}`)
     }
-  }) 
+  })
 })
