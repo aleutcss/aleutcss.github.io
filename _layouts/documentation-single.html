@@ -17,17 +17,24 @@
       <div class="c-documentation">
         <nav class="c-documentation__nav">
           <h1 class="u-accessibility">Navigation</h1>
-          <h2 class="u-delta u-mb-small"><a class="c-documentation__nav-link c-documentation__nav-link--current" href="/documentation/">Introduction</a></h2>
+          <h2 class="u-delta u-mb-small"><a class="c-documentation__nav-link" href="/documentation/">Introduction</a></h2>
 
           {% include documentation-nav.html %}
-
         </nav>
         <article class="c-documentation__content">
           <div class="o-wrapper">
-            <h1 class="c-documentation__heading">Introduction</h1>
-            <div class="c-editable">
+
+            <article class="c-editable">
+              <h1 class="c-documentation__heading">{{page.title}}</h1>
               {{ content }}
-            </div>
+
+
+              	{% capture readme %}
+              		{% include /node_modules/{{page.package}}/README.md %}
+              	{% endcapture %}
+              	{{ readme | markdownify }}
+
+            </article>
           </div>
         </article>
       </div>

@@ -1,0 +1,104 @@
+<h2 class="c-documentation__nav-heading u-zeta">Settings</h2>
+<ol class="o-list-ui o-list-ui--tiny u-mb">
+  {% for node in site.pages %}
+    {% if node.layout == 'documentation-single' %}
+      {% if node.section == 'settings' %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="c-documentation__nav-link c-documentation__nav-link--current">{{node.title}}</a></li>
+        {% else %}
+          <li><a class="c-documentation__nav-link" href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<h2 class="c-documentation__nav-heading u-zeta">Tools</h2>
+<ol class="o-list-ui o-list-ui--tiny u-mb">
+  {% for node in site.pages %}
+    {% if node.layout == 'documentation-single' %}
+      {% if node.section == 'tools' %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="c-documentation__nav-link c-documentation__nav-link--current">{{node.title}}</a></li>
+        {% else %}
+          <li><a class="c-documentation__nav-link" href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<h2 class="c-documentation__nav-heading u-zeta">Generic</h2>
+<ol class="o-list-ui o-list-ui--tiny u-mb">
+  {% for node in site.pages %}
+    {% if node.layout == 'documentation-single' %}
+      {% if node.section == 'generic' %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="c-documentation__nav-link c-documentation__nav-link--current">{{node.title}}</a></li>
+        {% else %}
+          <li><a class="c-documentation__nav-link" href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<h2 class="c-documentation__nav-heading u-zeta">Base</h2>
+<ol class="o-list-ui o-list-ui--tiny u-mb">
+  {% for node in site.pages %}
+    {% if node.layout == 'documentation-single' %}
+      {% if node.section == 'base' %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="c-documentation__nav-link c-documentation__nav-link--current">{{node.title}}</a></li>
+        {% else %}
+          <li><a class="c-documentation__nav-link" href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<h2 class="c-documentation__nav-heading u-zeta">Objects</h2>
+<ol class="o-list-ui o-list-ui--tiny u-mb">
+  {% for node in site.pages %}
+    {% if node.layout == 'documentation-single' %}
+      {% if node.section == 'objects' %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="c-documentation__nav-link c-documentation__nav-link--current">{{node.title}}</a></li>
+        {% else %}
+          <li><a class="c-documentation__nav-link" href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<h2 class="c-documentation__nav-heading u-zeta">Components</h2>
+<ol class="o-list-ui o-list-ui--tiny u-mb">
+  {% for node in site.pages %}
+    {% if node.layout == 'documentation-single' %}
+      {% if node.section == 'components' %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="c-documentation__nav-link c-documentation__nav-link--current">{{node.title}}</a></li>
+        {% else %}
+          <li><a class="c-documentation__nav-link" href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<h2 class="c-documentation__nav-heading u-zeta">Utilities</h2>
+<ol class="o-list-ui o-list-ui--tiny u-mb">
+  {% for node in site.pages %}
+    {% if node.layout == 'documentation-single' %}
+      {% if node.section == 'utilities' %}
+        {% if page.url == node.url %}
+          <li class="active"><a href="{{node.url}}" class="c-documentation__nav-link c-documentation__nav-link--current">{{node.title}}</a></li>
+        {% else %}
+          <li><a class="c-documentation__nav-link" href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>
