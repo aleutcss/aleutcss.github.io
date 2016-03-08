@@ -11,22 +11,23 @@ filesList.map((val) => {
   let filename = path.basename(val, '.scss')
   filename = filename.replace('_', '')
   const section = filename.split('.')[0]
-  const dirname = path.dirname(val)
+  const dirname = filename.replace('.', '-')
+
   const text = `---
 layout: documentation-single
 title: ${filename}
 section: ${section}
 package: ${filename}
 ---`
-  const newDir = `./documentation/${filename}`
+  const newDir = `./documentation/${dirname}`
   if (!fs.existsSync(newDir)){
     fs.mkdirSync(newDir)
   }
-  fs.writeFile(`documentation/${filename}/index.md`, text, err => {
+  fs.writeFile(`documentation/${dirname}/index.md`, text, err => {
     if (err) {
       console.log(`Something went wront: ${err}`)
     } else {
-      console.log(`Created index.md in ${dirname}`)
+      console.log(`Created index.md in documentation/${dirname}`)
     }
   })
 })
