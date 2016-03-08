@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/aleutcss/Aleut#readme",
   "devDependencies": {
-    "commander": "^2.9.0",
-    "glob": "^7.0.3"
+    "glob": "^7.0.3",
+    "mkdirp": "^0.5.1"
   }
 }
