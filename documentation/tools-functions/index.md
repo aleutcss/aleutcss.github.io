@@ -1,6 +1,6 @@
 ---
 layout: documentation-single
-title: tools.clearfix
+title: tools.functions
 section: tools
-package: tools.clearfix
+package: tools.functions
 ---

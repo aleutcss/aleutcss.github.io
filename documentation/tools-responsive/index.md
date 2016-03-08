@@ -1,6 +1,6 @@
 ---
 layout: documentation-single
-title: tools.clearfix
+title: tools.responsive
 section: tools
-package: tools.clearfix
+package: tools.responsive
 ---

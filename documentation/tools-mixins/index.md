@@ -1,6 +1,6 @@
 ---
 layout: documentation-single
-title: tools.clearfix
+title: tools.mixins
 section: tools
-package: tools.clearfix
+package: tools.mixins
 ---
