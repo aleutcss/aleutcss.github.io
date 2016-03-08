@@ -45,3 +45,7 @@ a:not([class]) {
 		color: $black;
     text-shadow: none;
 }
+
+strong {
+  font-weight: 400;
+}

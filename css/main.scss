@@ -24,7 +24,6 @@
     Global variables, site-wide settings, config switches, etc.
     These are just for SCSS – nothing here gets compiled to CSS directly
 \*------------------------------------*/
-//++ our own variables that we use throughout the project.
 
 $font-size:          18px;
 $line-height:        30px;
@@ -33,7 +32,6 @@ $line-height:        30px;
 @import "../_includes/node_modules/settings.responsive/settings.responsive.scss";
 @import "_settings.scss";
 @import "_settings.fonts.scss";
-//++  //our own remaps of inuits variables
 
 
 
