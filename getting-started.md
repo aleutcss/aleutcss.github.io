@@ -183,6 +183,7 @@ Aleut.css does its best to stay away from any cosmetic styling. You can therefor
 
 Because aleut does no cosmetic styling, it is up to you to author the Components layer. A good example of this could be a main navigation of a site. First you mark it up as an `<ul>`, then you add the object `.o-list-inline` to make the menu horizontal, to style it to your liking you create a new file called `_components.site-nav.scss` and add the class `.c-site-nav` to the `.o-list-inline` and style it to your liking.
 
+<!--
 ## Aleut.css for skeptics
 
 “”
@@ -198,3 +199,4 @@ Because aleut does no cosmetic styling, it is up to you to author the Components
 ## Aleut.css for dreamers
 
 “”
+-->
