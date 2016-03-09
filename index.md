@@ -32,7 +32,7 @@ If you already have a `package.json`-file in your project, just run this command
 
 	$ npm install aleutcss/objects.tables aleutcss/objects.pack aleutcss/objects.media aleutcss/objects.list-ui aleutcss/objects.list-inline aleutcss/objects.buttons aleutcss/objects.box aleutcss/objects.block aleutcss/objects.tabs aleutcss/objects.list-bare aleutcss/objects.layout aleutcss/objects.flag aleutcss/utilities.spacing-responsive aleutcss/utilities.spacing aleutcss/utilities.clearfix aleutcss/utilities.paragraphs aleutcss/utilities.headings aleutcss/utilities.print aleutcss/utilities.widths aleutcss/utilities.widths-responsive aleutcss/tools.widths aleutcss/tools.responsive aleutcss/tools.mixins aleutcss/tools.function --save --no-progress
 
-You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `settings.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/settings.scss).
+You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `_settings.vars.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/_settings.vars.scss).
 
 ### I've got all the packages and settings.scss, now what?
 
@@ -46,28 +46,12 @@ You will now have a bunch of new stuff in your npm-folder (usually called `node_
 ## Structure
 Aleutcss is based upon 35 different packages loaded in specific layers to remain in control of specificity and structuring your project. The order of partials within each layer is fairly open; it is the sections themselves that are important to get in the correct order.
 
-[Image of all the packages with links to each of them in this document]
 <img src="public/overview.png">
 
 ### Settings
 Global variables, site-wide settings, config switches, etc.
 (just code for SCSS)
 
-<h4 class="c-toggle u-bg-settings" data-toggle-next> settings.default</h4>
-<article class="c-article" data-hide>
-	{% capture settingsDefault %}
-		{% include /node_modules/settings.defaults/README.md %}
-		{% endcapture %}
-	{{ settingsDefault | markdownify }}
-</article>
-
-<h4 class="c-toggle u-bg-settings" data-toggle-next> settings.responsive</h4>
-<article class="c-article" data-hide>
-	{% capture settingsResponsive %}
-		{% include /node_modules/settings.responsive/README.md %}
-		{% endcapture %}
-	{{ settingsResponsive | markdownify }}
-</article>
 
 ### Tools
 Site-wide mixins and functions.
@@ -100,7 +84,7 @@ $o-btn--full:         true;
 @import "node-modules/aleut-buttons/objects.buttons";
 ```
 
-It is also important to underline that some times it is more correct to create a new CSS-class as a modifier. See more in [components]("#components")
+It is also important to underline that some times it is more correct to create a new CSS-class as a modifier. See more in Components.
 
 ### Off by default
 As you've seen aleut consist of a lot of different files. This is so that you just import the files you need. But we have another layer of reduced bloat: all variants are switched off by default. So if you just want buttons, you don’t get every different size and version of them unless you explicitly turn them on.
