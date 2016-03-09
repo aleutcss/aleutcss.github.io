@@ -21,6 +21,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Aleut is a fork of inuitcss. It is a powerful, Sass-based, BEM, OOCSS framework designed with scalability and performance in mind.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://aleutcss.github.io" # the base hostname & protocol for your site
-github_username:  aleut
+github_username:  aleutcss
 
 sass:
