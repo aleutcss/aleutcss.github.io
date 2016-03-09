@@ -179,7 +179,7 @@ Since all the aleut-files are imported via npm you should not modify the files d
 $btn-background:      #BADA55;
 $btn-radius:          3px;
 $o-btn--full:         true;
-@import "node-modules/objects-buttons/objects.buttons";
+@import "node-modules/aleut-buttons/objects.buttons";
 ```
 
 It is also important to underline that some times it is more correct to create a new CSS-class as a modifier. See more in [components]("#components")
@@ -190,7 +190,7 @@ As you've seen aleut consist of a lot of different files. This is so that you ju
 To turn features on, just set their switches to true (again, before you @import the file):
 ```css
 $o-btn--full:    true;
-@import "node-modules/objects-buttons/objects.buttons";
+@import "node-modules/aleut-buttons/objects.buttons";
 ```
 
 ### Extending aleut
