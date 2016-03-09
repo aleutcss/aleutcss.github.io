@@ -133,24 +133,6 @@ In [settings.defaults](https://github.com/aleutcss/settings.defaults)
 Global variables, site-wide settings, config switches, etc.
 (just code for SCSS)
 
-<h4 class="c-toggle u-bg-settings" data-toggle-next> settings.default</h4>
-<article class="c-article" data-hide>
-  {% capture settingsDefault %}
-    {% include node_modules/settings.defaults/README.md %}
-    {% endcapture %}
-  {{ settingsDefault | markdownify }}
-</article>
-
-
-<h4 class="c-toggle u-bg-settings" data-toggle-next> settings.responsive</h4>
-<article class="c-article" data-hide>
-  {% capture settingsResponsive %}
-    {% include node_modules/settings.responsive/README.md %}
-    {% endcapture %}
-  {{ settingsResponsive | markdownify }}
-</article>
-
-
 ### Tools
 Site-wide mixins and functions.
 (just code for SCSS)
@@ -170,8 +152,6 @@ Discrete, complete chunks of UI (e.g. `.c-carousel {}`). This is the one layer t
 
 ### Utilities (u-prefix on the class-names)
 High-specificity, very explicit selectors. Overrides and helper classes (e.g. `.u-hidden {}`) as well as grids.
-
-##
 
 ### Modifying aleut
 Since all the aleut-files are imported via npm you should not modify the files directly. You should rather edit the variable before you `@import` the specific file. Let's take f.ex. the button-object: If you want to change the default button works you edit it like this:
