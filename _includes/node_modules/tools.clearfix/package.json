@@ -1,0 +1,27 @@
+{
+  "name": "@aleut/aleut-tools.clearfix",
+  "version": "0.1.0",
+  "description": "Small clearfixing mixin for the aleutcss framework (based on Harry Roberts inuitcss framework)",
+  "main": "_tools.clearfix.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleutcss/tools.clearfix.git"
+  },
+  "contributors": [
+    {"name": "Marius Hauken", "url": "http://twitter.com/mhauken", "email": "hauken@netliferesearch.com"},
+    {"name": "Robin Sandborg", "url": "http://twitter.com/robrobro", "email": "robin@netliferesearch.com"},
+    {"name": "Knut Melvær", "url": "http://twitter.com/kmelve", "email": "knut@netliferesearch.com"},
+    {"name": "Harry Roberts", "email": "harry@csswizardry.com"}
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aleutcss/tools.clearfix/issues"
+  },
+  "homepage": "https://github.com/aleutcss/tools.clearfix",
+  "keywords": [
+    "aleutcss",
+    "aleut",
+    "oocss",
+    "css"
+  ]
+}

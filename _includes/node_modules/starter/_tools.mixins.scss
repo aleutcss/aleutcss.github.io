@@ -1,0 +1,30 @@
+///*------------------------------------*\
+//    #MIXINS
+//\*------------------------------------*/
+
+// These are our own additional mixins to Inuit.css
+
+// PLACEHOLDER-MIXIN:
+//
+// Usage:
+//
+// .example {
+//      @include placeholder(#f2f2f2);
+// }
+//
+
+@mixin placeholder($placeholderContent) {
+   &::-webkit-input-placeholder { /* WebKit browsers */
+        color: $placeholderContent;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $placeholderContent;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $placeholderContent;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: $placeholderContent;
+    }
+
+}

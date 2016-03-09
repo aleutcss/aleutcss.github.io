@@ -1,0 +1,54 @@
+///*------------------------------------*\
+//    #HELPER CLASSES
+//	  Helper-classes that does one thing and one thing only.
+//\*------------------------------------*/
+
+/**
+ * Helper-class for removing item visually, but not for screenreaders
+ */
+.u-accessibility{
+    border:0!important;
+    clip:rect(0 0 0 0)!important;
+    height:1px!important;
+    margin:-1px!important;
+    overflow:hidden!important;
+    padding:0!important;
+    position: absolute!important;
+    width:1px!important;
+}
+
+/**
+ * Floating left. Remember to add clearfix class on parent item: .u-clearfix
+ */
+.u-fl{
+    float: left;
+}
+
+/**
+ * Floating right. Remember to add clearfix class on parent item: .u-clearfix
+ */
+.u-fr{
+    float: right;
+}
+
+/**
+ * If we don't want to wrap the text over multiple lines.
+ */
+.u-nowrap{
+    white-space: nowrap;
+}
+
+/**
+ * Text align helper classes.
+ */
+.u-tr{
+    text-align: right;
+}
+
+.u-tc{
+    text-align: center;
+}
+
+.u-tl{
+    text-align: left;
+}
