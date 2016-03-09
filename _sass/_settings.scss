@@ -17,3 +17,10 @@ $generic: #45D4A5;
 $base: #F1C40E;
 $objects: #FF7100;
 $trumps: #C0390B;
+
+
+$breakpoints: (
+    "s"       "screen and (max-width: 44.9375em)",
+    "m"       "screen and (min-width: 45em)",
+    "l"       "screen and (min-width: 64em)"
+);
