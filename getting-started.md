@@ -40,8 +40,10 @@ $ unzip master.zip
 $ cd starter
 # Download all the project dependencies with npm
 $ npm i
-$ npm start
+# Bring your own compiler (gulp, sass or whatever)
 ~~~
+
+
 
 ### Getting Aleut.css into an existing project
 
