@@ -24,4 +24,5 @@ Be extra aware of the `$spacing`-variables. The default spacing in aleut is 24px
 
 ## Install using npm:
 
-    $ npm install --save-dev
+    $ npm install --save-dev aleut.settings.defaults
+

@@ -28,25 +28,22 @@ $link: blue;
  * RESPONSIVE BREAKPOINTS
  * This is where we define all our breakpoints. It overwrites https://github.com/aleutcss/settings.responsive
  * These also generate helper-classes with aleut that we can use:
- * f.ex: u-1/2@lap (for width), u-pt@lap(for padding-top on lap-size) etc.
+ * f.ex: u-1/2@m (for width), u-pt@s(for padding-top on s-size) etc.
  * See all alternatives in https://github.com/aleutcss/utilities.spacing-responsive and
  * utilities.widths-responsive.
  *
  * We can also use them with a media-query mixin like this:
  * Usage:
- *  @include media-query(palm) {
+ *  @include media-query(s) {
  *
  *  }
  */
 
 $breakpoints: (
-    "palm"               "screen and (max-width: 639px)",
-    "lap"                "screen and (min-width: 640px) and (max-width: 1023px)",
-    "lap-and-up"         "screen and (min-width: 640px)",
-    "portable"           "screen and (max-width: 849px)",
-    "portable-and-up"    "screen and (min-width: 850px)",
-    "desk"          "screen and (min-width: 1024px)",
-    "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
+    "s"       "screen and (max-width: 44.9375em)",
+    "m"       "screen and (min-width: 45em)",
+    "l"       "screen and (min-width: 64em)",
+    "retina"  "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
 );
 
 /**
