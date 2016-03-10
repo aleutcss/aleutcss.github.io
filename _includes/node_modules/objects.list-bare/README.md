@@ -19,4 +19,4 @@ The `list-bare` object just have one class:
 	<li>List item</li>
 </ul>
 ```
-![Example of o-list-bare](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-list-bare.png)
+![Example of o-list-bare](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-list-bare.png)

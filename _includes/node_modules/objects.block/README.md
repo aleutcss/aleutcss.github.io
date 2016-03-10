@@ -24,7 +24,7 @@ Basic usage of the Block object uses the required classes:
     </div>
 </div>
 ```
-![Example of o-block](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-block.png)
+![Example of o-block](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-block.png)
 
 The only valid children of the `.o-block` node are `.o-block__img` and
 `.o-block__body`.
@@ -48,7 +48,7 @@ For example:
     </div>
 </div>
 ```
-![Example of o-block options](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-block-options.png)
+![Example of o-block options](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-block-options.png)
 
 ### Enable options
 To enable the optional classes set the variables to `true` before you import

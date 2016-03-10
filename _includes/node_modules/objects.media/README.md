@@ -29,7 +29,7 @@ Basic usage of the Media object uses the required classes:
 </div>
 ```
 
-![Example of o-media](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-media.png)
+![Example of o-media](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-media.png)
 
 The only valid children of the `.o-media` node are `.o-media__img` and
 `.o-media__body`.
@@ -57,7 +57,7 @@ For example:
     </div>
 ```
 
-![Example of o-media options](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-media-options.png)
+![Example of o-media options](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-media-options.png)
 
 
 ### Modify options

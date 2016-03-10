@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "aleut.settings.defaults": "~1.0.0",
-    "aleut.settings.mixins": "~1.0.0"
+    "aleut.tools.mixins": "~1.0.0"
 
   }
 }

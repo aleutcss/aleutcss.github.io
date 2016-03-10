@@ -29,7 +29,7 @@ Basic usage of the table object uses the required class:
 </table>
 ```
 
-![Example of o-table](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-table.png)
+![Example of o-table](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-table.png)
 
 ## Options
 
@@ -62,7 +62,7 @@ For example:
 </table>
 ```
 
-![Example of o-table options](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-table-options.png)
+![Example of o-table options](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-table-options.png)
 
 ### Enable options
 To enable the optional classes set the variables to `true` before you import

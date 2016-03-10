@@ -27,7 +27,7 @@ Basic usage of the flag-object uses the required classes:
 </div>
 ```
 
-![Example of o-flag](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-flag.png)
+![Example of o-flag](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-flag.png)
 
 The only valid children of the `.o-flag` node are `.o-flag__img` and
 `.o-flag__body`.
@@ -55,7 +55,7 @@ For example:
 </div>
 ```
 
-![Example of o-flag options](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-flag-options.png)
+![Example of o-flag options](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-flag-options.png)
 
 ### Enable options
 To enable the optional classes set the variables to `true` before you import

@@ -21,7 +21,7 @@ Basic usage of the List-inline object uses the required classes:
     </ul>
 ```
 
-![Example of o-list-inline](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-list-inline.png)
+![Example of o-list-inline](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-list-inline.png)
 
 The only valid children of the `.o-list-inline` node are `li`s.
 
@@ -41,7 +41,7 @@ For example:
     </ul>
 ```
 
-![Example of o-list-inline options](https://github.com/aleutcss/Aleut/tree/gh-pages/public/img/o-list-inline-options.png)
+![Example of o-list-inline options](https://raw.githubusercontent.com/aleutcss/aleutcss.github.io/master/public/img/o-list-inline-options.png)
 
 If you wish to completely remove the whitespace between items, omit the closing
 `</li>` tag:
