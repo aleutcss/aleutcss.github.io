@@ -29,7 +29,7 @@ Aleut.css is built with [SASS](http://sass-lang.com/guide). Chance is that you'r
 
 We have made a starter package that includes all the starter packages. It should be enough to get you going.
 
-If you're starting a new project from scratch it's easiest to just download [the zip-file](https://github.com/mhauken/start/archive/master.zip) directly. You can also do it all from the command line:
+If you're starting a new project from scratch it's easiest to just download [the zip-file](https://github.com/aleutcss/starter/archive/master.zip) directly. You can also do it all from the command line:
 
 ~~~ssh
 # Download or clone the starter package and save it as a project dependency
