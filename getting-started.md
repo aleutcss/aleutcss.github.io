@@ -17,7 +17,7 @@ Aleut.css is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful
 
 ## “Let me just try this thing”
 
->    tl;dr. Download the starter. Uncomment some of the imports under _objects_ and set the variables to `true`. Run `npm start` in the command line and open [localhost:5000](http://localhost:5000) in the browser. Tweak some stuff and see how things change.
+>    tl;dr. Download the starter. Uncomment some of the imports under _objects_ and set the variables to `true`. Run `npm start` in the command line. Tweak some stuff and see how things change. The css-file is generated inn `/css/style.css`
 
 We get it, you just want to test this thing out before you invest time in reading about stylesheet structures and CSS-philosophies. Aleut is pretty well documented throughout the whole framework. You'll find documentation within the stylesheet files, in each of the repositories, and of course, at this website. While it may seem a bit daunting at first glance, trust us, the concepts behind Aleut.css is few and basic.
 
@@ -40,10 +40,8 @@ $ unzip master.zip
 $ cd starter
 # Download all the project dependencies with npm
 $ npm i
-# Bring your own compiler (gulp, sass or whatever)
+$ npm start # or bring your own compiler
 ~~~
-
-
 
 ### Getting Aleut.css into an existing project
 
