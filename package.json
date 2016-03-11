@@ -1,6 +1,7 @@
 {
-  "name": "aleut-documentation",
-  "version": "0.0.1",
+  "name": "aleut.documentation"
+,
+  "version": "1.0.0",
   "description": "Documentation of Aleut.css",
   "main": "indexer.js",
   "scripts": {
@@ -23,6 +24,40 @@
   "homepage": "https://github.com/aleutcss/Aleut#readme",
   "devDependencies": {
     "glob": "^7.0.3",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "aleut.base.images":"~1.0.0",
+    "aleut.base.lists":"~1.0.0",
+    "aleut.base.page":"~1.0.0",
+    "aleut.generic.box-sizing":"~1.0.0",
+    "aleut.generic.normalize":"~1.0.0",
+    "aleut.generic.reset":"~1.0.0",
+    "aleut.generic.shared":"~1.0.0",
+    "aleut.objects.block":"~1.0.0",
+    "aleut.objects.box":"~1.0.0",
+    "aleut.objects.buttons":"~1.0.0",
+    "aleut.objects.flag":"~1.0.0",
+    "aleut.objects.layout":"~1.0.0",
+    "aleut.objects.list-bare":"~1.0.0",
+    "aleut.objects.list-block":"~1.0.0",
+    "aleut.objects.list-inline":"~1.0.0",
+    "aleut.objects.list-ui":"~1.0.0",
+    "aleut.objects.media":"~1.0.0",
+    "aleut.objects.pack":"~1.0.0",
+    "aleut.objects.tables":"~1.0.0",
+    "aleut.objects.tabs":"~1.0.0",
+    "aleut.settings.defaults":"~1.0.0",
+    "aleut.settings.responsive":"~1.0.0",
+    "aleut.tools.clearfix":"~1.0.0",
+    "aleut.tools.functions":"~1.0.0",
+    "aleut.tools.mixins":"~1.0.0",
+    "aleut.tools.responsive":"~1.0.0",
+    "aleut.tools.widths":"~1.0.0",
+    "aleut.utilities.clearfix":"~1.0.0",
+    "aleut.utilities.headings":"~1.0.0",
+    "aleut.utilities.print":"~1.0.0",
+    "aleut.utilities.spacing":"~1.0.0",
+    "aleut.utilities.responsive-spacing":"~1.0.0",
+    "aleut.utilities.widths":"~1.0.0",
+    "aleut.utilities.responsive-widths":"~1.0.0"
   }
 }

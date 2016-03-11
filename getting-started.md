@@ -17,7 +17,7 @@ Aleut.css is a fork of [inuitcss](https://github.com/inuitcss). It is a powerful
 
 ## “Let me just try this thing”
 
->    tl;dr. Download the starter. Uncomment some of the imports under _objects_ and set the variables to `true`. Run `npm start` in the command line and open [localhost:5000](http://localhost:5000) in the browser. Tweak some stuff and see how things change.
+>    tl;dr. Download the starter. Uncomment some of the imports under _objects_ and set the variables to `true`. Run `npm start` in the command line. Tweak some stuff and see how things change. The css-file is generated inn `/css/style.css`
 
 We get it, you just want to test this thing out before you invest time in reading about stylesheet structures and CSS-philosophies. Aleut is pretty well documented throughout the whole framework. You'll find documentation within the stylesheet files, in each of the repositories, and of course, at this website. While it may seem a bit daunting at first glance, trust us, the concepts behind Aleut.css is few and basic.
 
@@ -29,7 +29,7 @@ Aleut.css is built with [SASS](http://sass-lang.com/guide). Chance is that you'r
 
 We have made a starter package that includes all the starter packages. It should be enough to get you going.
 
-If you're starting a new project from scratch it's easiest to just download [the zip-file](https://github.com/mhauken/start/archive/master.zip) directly. You can also do it all from the command line:
+If you're starting a new project from scratch it's easiest to just download [the zip-file](https://github.com/aleutcss/starter/archive/master.zip) directly. You can also do it all from the command line:
 
 ~~~ssh
 # Download or clone the starter package and save it as a project dependency
@@ -40,7 +40,7 @@ $ unzip master.zip
 $ cd starter
 # Download all the project dependencies with npm
 $ npm i
-$ npm start
+$ npm start # or bring your own compiler
 ~~~
 
 ### Getting Aleut.css into an existing project
@@ -48,9 +48,8 @@ $ npm start
 If you already have a `package.json`-file in your project, just run this command in terminal to save the Aleut.css essentials as dependencies.
 
 ~~~ssh
-$ npm install aleutcss/objects.tables aleutcss/objects.pack aleutcss/objects.media aleutcss/objects.list-ui aleutcss/objects.list-inline aleutcss/objects.buttons aleutcss/objects.box aleutcss/objects.block aleutcss/objects.tabs aleutcss/objects.list-bare aleutcss/objects.layout aleutcss/objects.flag aleutcss/utilities.spacing-responsive aleutcss/utilities.spacing aleutcss/utilities.clearfix aleutcss/utilities.paragraphs aleutcss/utilities.headings aleutcss/utilities.print aleutcss/utilities.widths aleutcss/utilities.widths-responsive aleutcss/tools.widths aleutcss/tools.responsive aleutcss/tools.mixins aleutcss/tools.function --save --no-progress
+$ npm install aleut.base.images aleut.base.lists aleut.base.page aleut.generic.box-sizing aleut.generic.normalize aleut.generic.reset aleut.generic.shared aleut.objects.block aleut.objects.box aleut.objects.buttons aleut.objects.flag aleut.objects.layout aleut.objects.list-bare aleut.objects.list-block aleut.objects.list-inline aleut.objects.list-ui aleut.objects.media aleut.objects.pack aleut.objects.tables aleut.objects.tabs aleut.settings.defaults aleut.settings.responsive aleut.tools.clearfix aleut.tools.functions aleut.tools.mixins aleut.tools.responsive aleut.tools.widths aleut.utilities.clearfix aleut.utilities.headings aleut.utilities.print aleut.utilities.responsive-spacing aleut.utilities.responsive-widths aleut.utilities.spacing aleut.utilities.widths --save-dev
 ~~~
-
 
 You will now have a bunch of new stuff in your npm-folder (usually called `node_modules`). That's Aleut.css ready to do its work. But first you'll have to import them into your sass-project with the sass `@import` function. We have prepared a `style.scss` for you to [download into your scss-folder](https://raw.githubusercontent.com/aleutcss/starter/master/style.scss).
 
