@@ -6,12 +6,16 @@
   color: $primary;
   font-weight: 800;
   text-decoration: none;
-  @include font-size(22px, 1);
+  @include font-size(18px, 1);
   transition: color 0.2s ease;
   margin-right: $spacing*2;
 
   &:hover, &:active, &:focus {
     color: $primary-light;
+  }
+
+  @include media-query(m) {
+    @include font-size(22px, 1);
   }
 }
 
@@ -25,10 +29,18 @@
 
 .c-header__list-item {
   display: inline-block;
-  margin-right: $spacing;
+  margin-right: $spacing/2;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include media-query(s) {
+    @include font-size(14px);
+  }
+
+  @include media-query(m) {
+    margin-right: $spacing;
   }
 }
 

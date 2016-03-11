@@ -1,5 +1,9 @@
 .c-hero {
-  padding: ($spacing*2) 0;
+  padding: ($spacing) 0;
+
+  @include media-query(m) {
+    padding: ($spacing*2) 0;
+  }
 }
 
   .c-hero--dark {
@@ -14,8 +18,12 @@
   display: block;
   font-family: $font-headings;
   font-weight: 800;
-  @include font-size(64px,1);
+  @include font-size(34px,1);
   color: $primary-light;
+
+  @include media-query(m) {
+    @include font-size(64px,1);
+  }
 }
 
   .c-hero__title--emphasized {
