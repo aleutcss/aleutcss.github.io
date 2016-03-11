@@ -122,8 +122,8 @@ $o-btn--full:         true;
 ## Structure
 Aleut.css is based upon 35 different packages loaded in specific layers to remain in control of specificity and structuring your project. The order of partials within each layer is fairly open; it is the sections themselves that are important to get in the correct order.
 
-[Image of all the packages with links to each of them in this document]
-<img src="public/overview.png">
+[Image of all the packages and structure]
+<img src="public/img/overview.png">
 
 ### Settings
 
