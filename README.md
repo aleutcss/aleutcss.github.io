@@ -14,18 +14,38 @@
 </article>
 ```
 
-<p data-height="268" data-theme-id="0" data-slug-hash="NGqJad" data-default-tab="result" data-user="mhauken" class="codepen">See the Pen <a href="http://codepen.io/mhauken/pen/NGqJad/">objects.list-bare</a> by mhauken (<a href="http://codepen.io/mhauken">@mhauken</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
 *– A fork of inuit.css*
 
 > According to Georgy A. Menovshchikov (Г. А. Меновщиков), the name Aleut comes from the Aleut word allíthuh, meaning "community."
 
-[Inuit.css](https://github.com/inuitcss) introduced a [block-element-modifier (BEM)](https://en.bem.info/) and object-oriented framework for CSS. We love the work [Harry Roberts](http://csswizardry.com/) and his collaborators has done with Inuit. Acknowledging their work, we want to take it a step further and introduce it to the front-end community. Aleut adopts the ITCSS architecture and should be fully compatible with Inuit.css objects and components.
+[Inuit.css](https://github.com/inuitcss) introduced a [block-element-modifier (BEM)](https://en.bem.info/) and object-oriented framework for CSS. We love the work [Harry Roberts](http://csswizardry.com/) and his collaborators have done with Inuitcss. Acknowledging their work, we want to take it a step further and make it easier for people to get up and running. Aleut adopts the ITCSS architecture.
 
 ## Index
 
+### Settings
+
 - [settings.defaults](https://github.com/aleutcss/settings.defaults)
+- [settings.responsive](https://github.com/aleutcss/settings.responsive)
+
+### Tools
+- [tools.mixins](https://github.com/aleutcss/tools.mixins)
+- [tools.widths](https://github.com/aleutcss/tools.widths)
+- [tools.responsive](https://github.com/aleutcss/tools.responsive)
+- [tools.functions](https://github.com/aleutcss/tools.functions)
+- [tools.clearfix](https://github.com/aleutcss/tools.clearfix)
+
+### Generic
+- [generic.shared](https://github.com/aleutcss/generic.shared)
+- [generic.reset](https://github.com/aleutcss/generic.reset)
+- [generic.normalize](https://github.com/aleutcss/generic.normalize)
+- [generic.box-sizing](https://github.com/aleutcss/generic.box-sizing)
+
+### Base
+- [base.headings](https://github.com/aleutcss/base.headings)
+- [base.page](https://github.com/aleutcss/base.page)
+- [base.lists](https://github.com/aleutcss/base.lists)
+- [base.images](https://github.com/aleutcss/base.images)
+
 
 ### Objects
 
@@ -52,13 +72,6 @@
 - [utilities.print](https://github.com/aleutcss/utilities.print)
 - [utilities.widths](https://github.com/aleutcss/utilities.widths)
 - [utilities.widths-responsive](https://github.com/aleutcss/utilities.widths-responsive)
-
-### Tools
-
-- [tools.widths](https://github.com/aleutcss/tools.widths)
-- [tools.responsive](https://github.com/aleutcss/tools.responsive)
-- [tools.mixins](https://github.com/aleutcss/tools.mixins)
-- [tools.functions](https://github.com/aleutcss/tools.functions)
 
 ## Install
 
