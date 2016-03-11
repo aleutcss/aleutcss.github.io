@@ -1,6 +1,6 @@
 # Aleut.css
 
-## To get startet with using Aleutcss
+## To get started with using Aleutcss
 - Read our guide to [getting started](http://aleutcss.github.io/getting-started)
 - Try our [starter package](https://github.com/aleutcss/starter) to get up and running really fast
 
