@@ -1,0 +1,18 @@
+
+.c-btn--primary {
+  color: $white;
+  background: $primary;
+  border: 1px solid $primary;
+
+  &:hover, &:focus, &:active {
+    background: darken($primary, 10);
+    color: $white;
+  }
+}
+
+.c-btn--secondary {
+
+  &:hover, &:focus, &:active {
+    background: rgba($primary, 0.2);
+  }
+}

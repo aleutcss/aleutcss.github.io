@@ -89,7 +89,10 @@ $heading-size-3:  20px;
 \*------------------------------------*/
 @import "../_includes/node_modules/objects.block/_objects.block.scss";
 @import "../_includes/node_modules/objects.box/_objects.box.scss";
+$o-btn-color: $primary;
+$o-btn-border-color: $primary;
 @import "../_includes/node_modules/objects.buttons/_objects.buttons.scss";
+@import "_objects.buttons.scss";
 @import "../_includes/node_modules/objects.flag/_objects.flag.scss";
 @import "../_includes/node_modules/objects.layout/_objects.layout.scss";
 @import "../_includes/node_modules/objects.list-bare/_objects.list-bare";
@@ -126,6 +129,7 @@ $o-list-ui-border-color: rgba($primary, 0.2);
 @import "_components.hero.scss";
 @import "_components.footer.scss";
 @import "_components.documentation.scss";
+@import "_components.buttons.scss";
 
 
 
