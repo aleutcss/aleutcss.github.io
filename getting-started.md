@@ -23,7 +23,7 @@ We get it, you just want to test this thing out before you invest time in readin
 
 You _could_ download all the packages from Github in zip-files, but that'd make it pretty unmaintainable. Aleut.css is distributed with [node package manager](https://npmjs.com), which makes installing it in a project easy as a breeze. If you're not familiar with the `npm` tool in the command line, do yourself a huge favor and [familiarize yourself with it](https://docs.npmjs.com/getting-started/what-is-npm). You'll thank us later.
 
-Aleut.css is built with [SASS](http://sass-lang.com/guide). Chance is that you're already familiar with how SASS works. If not, Aleut.css is a great way to start learning. We'll cover how you import the packages into your stylesheet, and how to build the CSS-files for your web project.
+Aleut.css is built with [*Sass*](http://sass-lang.com/guide). Chance is that you're already familiar with how *Sass* works. If not, Aleut.css is a great way to start learning. We'll cover how you import the packages into your stylesheet, and how to build the CSS-files for your web project.
 
 ### Aleut.css from scratch
 
